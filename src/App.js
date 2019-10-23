@@ -20,7 +20,7 @@ function App () {
       <Card.Group centered stackable>
         {Object.entries(TABLE_2.data).map(([key, value]) => {
             const co2 = +(((value[3] * distance) / 1000) / people).toFixed(2)
-            const color = co2 < 100 ? 'green' : co2 < 200 ? 'olive' : co2 < 500 ? 'yellow' : co2 < 1000 ? 'orange' : 'red'
+            const color = co2 < 100 ? 'green' : co2 < 200 ? 'olive' : co2 < 500 ? 'grey' : co2 < 1000 ? 'orange' : 'red'
 
             return (
               <Card key={key} color={color}>
